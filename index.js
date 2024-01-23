@@ -9,7 +9,7 @@ getImage(page);
 window.addEventListener("scroll", function () {
   checkPosition();
 });
-function getImage(page) {
+async function getImage(page) {
   fetch(
     `https://api.unsplash.com/photos?page=${page}&per_page=${counter}&client_id=Ju6O2A_FPphO1Bnb8JoYQx52wqWniKMPAZd4iPrSQPc&lang=ru`
   )
